@@ -1,0 +1,42 @@
+@media screen and (max-width: 765px) {
+    .main_section{
+        margin-left:0;
+    }
+    .about{
+        .about_img{
+            width: 500px;
+            margin: auto;
+        }
+    }
+    #header{
+        left: -80px;
+        .menu_bar{
+            font-size: 40px;
+            position: absolute;
+            right: -350px;
+            // top: 10px;
+            cursor: pointer;
+            display: block;
+        }
+    }
+    #header.active{
+        left: 0;
+    }
+    .tech_stack {
+        img {
+            max-width: 300px;
+        }
+    }
+    .card_services{
+       display: flex !important;
+       flex-direction: column !important;
+       justify-content: space-between;
+        .card-body-1{
+            // margin-bottom: 20px !important;
+        }
+    }
+    .hero_section{
+        display: flex;
+        flex-direction: row-reverse !important;
+    }
+}

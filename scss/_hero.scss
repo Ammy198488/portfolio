@@ -1,0 +1,31 @@
+@import "style";
+
+
+.hero{
+    .hero_container{
+        padding-top: 10%;
+    }
+    h1{
+        @include h1_heading;
+    }
+    h3{
+        color: $sec_color;
+        font-style: italic;
+    }
+    p{
+        @include h5_para;
+    }
+
+    span{
+        color: $sec_color;
+    }
+    .bi{
+        color: $ter_color;
+    }
+    .hero_img{ 
+        max-width: 400px;
+    }
+    .hero_icon a{
+        padding-left: 5px;
+    }
+}

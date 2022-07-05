@@ -1,0 +1,11 @@
+.portfolio{
+    h2{
+        @include h2_heading;
+    }
+}
+.card-body a{
+    color: $sec_color !important;
+    &:hover{
+        color: $main_color !important;
+    }
+}

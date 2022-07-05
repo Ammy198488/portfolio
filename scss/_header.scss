@@ -1,0 +1,29 @@
+@import "style";
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    background-color: $header-color;
+    height: 100%;
+    z-index: 1000;
+    .bi{
+        color: $icon_color;
+        width: 150px;
+        height: 150px;
+        font-size: 30px;
+    }
+    .bi:hover{
+        color: $sec-color;
+    }
+    .menu_bar{
+        display: none;
+    }
+    .menu_bar .bi {
+        background-color: white;
+        padding: 2px;
+        border-radius: 5px;
+        font-weight: bolder;
+    }
+}

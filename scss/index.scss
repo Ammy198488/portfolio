@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import "style";
+@import "header";
+@import "hero";
+@import "about";
+@import "portfolio";
+// @import "swiper";
+
+// General style
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: $main_color;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main_section{
+    margin-left: 100px;
+}
+// services
+.services_heading::before{
+    content: attr(data-heading);
+    color: $sec_color;
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    display: block;
+}
+.services{
+    h2{
+        @include h2_heading;
+    }
+    .bi{
+        font-size: 60px;
+    }
+    .card_services{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
+    }
+    .card-body1{
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+        border-radius: 5px;
+        padding: 15px 0;
+        margin-bottom: 20px !important;
+    }
+}
+   
+// tech stack
+.tech_stack{
+    h2{
+        @include h2_heading;
+    }
+    img{
+        max-width: 500px;
+    }
+    .iconify{
+        font-size: 64px;
+        margin-bottom: 20px !important;
+    }
+}
+
+.contact{
+    h2{
+        @include h2_heading;
+    }
+    iframe{
+        width: 100%;
+        height: 430px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .input_content{
+        margin-bottom: 10px;
+        input{
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 9px 20px;
+            width: 100%;
+            outline: none;
+            color: white;
+        }
+        textarea{
+            resize: none;
+            height: 210px;
+            padding: 9px 20px;
+            border-radius: 10px;
+            width: 100%;
+            border: 1px solid white;
+            border-radius: 10px;
+            outline: none;
+            color: white;
+            background-color: transparent;
+        }
+    }
+    
+}
+footer{
+    span{
+        font-style:italic ;
+    }
+    li{
+        margin-left: 10px;
+    }
+    .footer-icon a{
+        margin-left: 10px;
+    }
+    li a:hover{
+        color: $sec_color !important;
+    }
+}
+#myBtn {
+    // display: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white !important;
+    cursor: pointer;
+    transition: all .4s;
+    .bi{
+        font-size: 30px
+    }
+}
+
+@import "mediaqueries";

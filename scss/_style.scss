@@ -1,0 +1,40 @@
+$header-color:black;
+$main_color:#022C43;
+$sec_color:#FFD700;
+$ter_color:white;
+$icon_color:#808080;
+
+span{
+    color: $ter_color;
+}
+
+@mixin h1_heading {
+    font-size: 49px;
+    // font-weight: bold;
+    color: $ter_color;
+}
+@mixin h2_heading {
+    font-size: 39.1px;
+    // font-weight: bold;
+    color: $ter_color;
+}
+@mixin h3_heading {
+    font-size: 31.3px;
+    // font-weight: bold;
+    color: $ter_color;
+}
+@mixin h4_heading {
+    font-size: 25px;
+    // font-weight: bold;
+    color:$ter_color ;
+}
+@mixin h5_heading {
+    font-size: 20px;
+    // font-weight: bold;
+    color: $ter_color;
+}
+@mixin h5_para {
+    font-size: 25px;
+    color: $ter_color;
+    font-weight: lighter;
+}
